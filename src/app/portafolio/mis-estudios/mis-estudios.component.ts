@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MisEstudiosComponent implements OnInit {
 
-  constructor() { }
+  //Defino mi variable vacia
+  public masestudios: string;
+
+  constructor() { 
+    this.masestudios = '';
+  }  
 
   ngOnInit(): void {
+  }
+
+  //Creo nuevo método para manipular la variable
+  muestraEstudios(cadena: string){
+    this.masestudios = cadena;
   }
 
 }

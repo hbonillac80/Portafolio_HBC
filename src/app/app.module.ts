@@ -8,6 +8,7 @@ import { MisEstudiosComponent } from './portafolio/mis-estudios/mis-estudios.com
 import { MisHabilidadesComponent } from './portafolio/mis-habilidades/mis-habilidades.component';
 import { MisInteresesComponent } from './portafolio/mis-intereses/mis-intereses.component';
 import { MisPremiosComponent } from './portafolio/mis-premios/mis-premios.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MisPremiosComponent } from './portafolio/mis-premios/mis-premios.compon
     MisPremiosComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

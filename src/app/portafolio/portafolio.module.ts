@@ -6,8 +6,7 @@ import { MisEstudiosComponent } from './mis-estudios/mis-estudios.component';
 import { MisHabilidadesComponent } from './mis-habilidades/mis-habilidades.component';
 import { MisInteresesComponent } from './mis-intereses/mis-intereses.component';
 import { MisPremiosComponent } from './mis-premios/mis-premios.component';
-
-
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -16,10 +15,15 @@ import { MisPremiosComponent } from './mis-premios/mis-premios.component';
     MisEstudiosComponent,
     MisHabilidadesComponent,
     MisInteresesComponent,
-    MisPremiosComponent
+    MisPremiosComponent,
+    MatButtonModule
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatButtonModule,
+  ],
+  exports: [
+    MatButtonModule,
   ]
 })
 export class PortafolioModule { }

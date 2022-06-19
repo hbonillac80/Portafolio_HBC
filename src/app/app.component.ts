@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portafolioHBC';
+  agradecimiento: string = "";
+
+  salidaEvento(evento: string){
+    this.agradecimiento = evento;
+  }
 }

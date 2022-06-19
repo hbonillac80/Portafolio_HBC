@@ -44,6 +44,8 @@
   <hr class="m-0" />
   
   <!-- Invoca al componente de mis premios (6. awards)-->
-  <app-mis-premios></app-mis-premios>
-
+  <app-mis-premios [inicio]="'Below I list some of my most important achievements, thanks for your interest!'" (salidaAgradece)="salidaEvento($event)"></app-mis-premios>
+  
+  <hr class="m-0" />
+  <p>{{agradecimiento}}</p>  
 </div>

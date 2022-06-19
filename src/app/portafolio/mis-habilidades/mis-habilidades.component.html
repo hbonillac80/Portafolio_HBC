@@ -17,28 +17,30 @@
             <li class="list-inline-item"><i class="fab fa-grunt"></i></li>
             <li class="list-inline-item"><i class="fab fa-npm"></i></li>
         </ul>
-        <div class="subheading mb-3">Workflow</div>
+        <div class="mb-3">{{titulo | lowercase}} - <b>{{manejo | uppercase}}</b></div>
         <ul class="fa-ul mb-0">
             <li>
                 <span class="fa-li"><i class="fas fa-check"></i></span>
-                Mobile-First, Responsive Design
+                Mobile-First, Responsive Design - <b>[Score: {{score1 | number: '1.2'}}]</b>
             </li>
             <li>
                 <span class="fa-li"><i class="fas fa-check"></i></span>
-                Cross Browser Testing & Debugging
+                Cross Browser Testing & Debugging - <b>[Score: {{score2 | number: '1.2'}}]</b>
             </li>
             <li>
                 <span class="fa-li"><i class="fas fa-check"></i></span>
-                Cross Functional Teams
+                Cross Functional Teams - <b>[Score: {{score3 | number: '1.2'}}]</b>
             </li>
             <li>
                 <span class="fa-li"><i class="fas fa-check"></i></span>
-                Agile Development & Scrum
+                Agile Development & Scrum - <b>[Score: {{score4 | number: '1.2'}}]</b>
             </li>
             <li>
               <span class="fa-li"><i class="fas fa-check"></i></span>
-              Project Management & PMI
+              Project Management & PMI - <b>[Score: {{score5 | number: '1.2'}}]</b>
           </li>
         </ul>
+        <br>
+        <div class="flex-shrink-0"><span class="text-primary">Creation date: {{creacion | date:'dd-MM-yyyy'}}</span></div>
     </div>
 </section>

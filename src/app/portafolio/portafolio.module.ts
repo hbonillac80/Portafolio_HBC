@@ -16,14 +16,19 @@ import {MatButtonModule} from '@angular/material/button';
     MisHabilidadesComponent,
     MisInteresesComponent,
     MisPremiosComponent,
-    MatButtonModule
   ],
   imports: [
     CommonModule,
     MatButtonModule,
   ],
   exports: [
-    MatButtonModule,
+    MisDatosComponent,
+    MiVidaLaboralComponent,
+    MisEstudiosComponent,
+    MisHabilidadesComponent,
+    MisInteresesComponent,
+    MisPremiosComponent,
+    MatButtonModule
   ]
 })
 export class PortafolioModule { }

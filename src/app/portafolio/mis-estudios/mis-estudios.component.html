@@ -19,10 +19,35 @@
             </div>
             <div class="flex-shrink-0"><span class="text-primary">January 1997 - December 2001</span></div>
         </div>
+        <br>
+        <div class="d-flex flex-column flex-md-row justify-content-between">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Term</th>
+                        <th scope="col">Course</th>
+                        <th scope="col">Institution</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let curso of cursos; index as i">
+                        <th scope="row">{{i+1}}</th>
+                        <td>{{curso.periodo}}</td>
+                        <td>{{curso.nombre}}</td>
+                        <td>{{curso.institucion}}</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+        <br>
         <div class="social-icons">
-            <button mat-raised-button color="primary" (click)="muestraEstudios('Frameworks and Tools: Advanced: Scriptcase for PHP, Oracle tools: forms developer, designer and discoverer, Microsoft Visual Studio; Intermediate: Apache, Tomcat, Soap | Rest, Bootstrap | JQuery; Basic: AWS.')">See+</button>
+            <button mat-raised-button color="primary" (click)="muestraEstudios('Frameworks and Tools: Advanced: Scriptcase for PHP, Oracle tools: forms developer, designer and discoverer, Microsoft Visual Studio; Intermediate: Apache, Tomcat, Soap | Rest, Bootstrap | JQuery; Basic: AWS.'); cambio = !cambio">
+                {{cambio ? 'See+' : 'Hide'}}
+            </button>
             <br>
-            <span>{{masestudios}}</span>
+            <div *ngIf="!cambio"><span>{{masestudios}}</span></div>
         </div>
     </div>
 </section>
